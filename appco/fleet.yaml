@@ -23,5 +23,6 @@ diff:
   - apiVersion: apps/v1
     kind: Deployment
     name: istiod
-    namespace: istio-system
-    patch: '{"spec":{"strategy":{"type":null}}}'
+    operations:
+      - op: remove
+        path: /spec/strategy/type
