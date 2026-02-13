@@ -20,8 +20,3 @@ diff:
     name: istiod-default-validator
     operations:
     - {"op": "remove", "path":"/webhooks"}
-  - apiVersion: apps/v1
-    kind: Deployment
-    name: istiod
-    operations:
-    - {"op": "replace", "path":"/spec/strategy/type", "value":"RollingUpdate"}
