@@ -24,4 +24,4 @@ diff:
     kind: Deployment
     name: istiod
     operations:
-    - {"op": "remove", "path":"/istiod"}
+    - {"op": "replace", "path":"/spec/strategy/type", "value":"RollingUpdate"}
